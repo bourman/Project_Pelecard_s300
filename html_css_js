@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>imge change by javascrip</title>
+    
+    <style>
+        img{
+            margin: 50px auto;
+            display: block;
+            margin-bottom: 20px;
+            
+        }
+        .button-area{
+            text-align: center;
+
+        }
+        button{
+            padding: 8px 30px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="img-area" src="ready.png" alt="" />
+    <div class="button-area">
+        <button onclick="green()">Green</button>
+        <button onclick="red()">Red</button>
+
+    </div>
+    
+
+<script>
+    var img = document.getElementById("img-area");
+    function green() {
+        img.src = 'ready.png';
+    }
+
+    function red() {
+        img.src = 'Code.png';
+
+
+    }
+</script>
+
+</body>
+</html>
